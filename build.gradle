@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://repo.pentaho.org/artifactory/repo"
+    }
+}
+
+dependencies {
+    compile 'pentaho:mondrian:3.10.0.1-130'
+}
